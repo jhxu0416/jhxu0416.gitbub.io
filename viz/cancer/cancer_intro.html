@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>US County Cancer Poll Map</title>
+	<style type="text/css">
+		body {
+			background: #000000;
+		}
+		img{
+			display: block;
+			margin: 0 auto;
+		}
+		div.butn{
+			position: relative;
+			width: 500px;
+			height: 500px;
+		}
+		.background_pic {
+    		opacity: 1;
+    		display: block;
+    		width: 100%;
+    		height: auto;
+    		transition: .5s ease;
+		}
+		div.middle {
+			transition: .5s ease;
+			opacity: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		    -ms-transform: translate(-50%, -50%)
+		}
+		div.butn:hover .background_pic{
+			opacity: 0.1
+		}
+		div.butn:hover .middle{
+			opacity: 1
+		}
+		.text{
+			color: white;
+			font-size: 36px;
+			font-family: "Avenir";
+		}
+		table{
+			margin:1em auto;
+		}
+	</style>
+</head>
+<body>
+	<table cellspacing="70">
+	<tr>
+		<td>
+			<a href="cancer.html">
+				<div class="butn">
+					<img src="vis_screen_shot.png" class = "background_pic"/>
+					<div class = "middle">
+						<div class = "text">
+							US County Cancer Poll Map
+						</div>						
+					</div>
+				</div>
+			</a>
+		</td>
+		<td>
+			<div class = "text">
+					Vis tool: R(leaflet)</br>
+					Description:</br>
+					This visualization is a map of two types of cancer on US county level. Furthermore, this map also shows locations of land use sites, nuclear plants, and electric power plants, which may be potential causes of cancer. 
+			</div>						
+		</td>
+	</tr>
+	</table>
+	<p></br></br></br></br></br></br></br></br></p>
+	<a href="https://drive.google.com/drive/folders/17eoeoNRUsr7RQ6NxPZGMWj09g8Fy_H1e?usp=sharing">
+		<p>Code and Data</p>
+	</a>
+</body>
+</html>

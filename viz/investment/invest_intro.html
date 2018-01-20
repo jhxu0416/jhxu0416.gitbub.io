@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Investment</title>
+	<style type="text/css">
+		body {
+			background: #000000;
+		}
+		img{
+			display: block;
+			margin: 0 auto;
+		}
+		div.butn{
+			position: relative;
+			width: 700px;
+			height: 400px;
+		}
+		.background_pic {
+    		opacity: 1;
+    		display: block;
+    		width: 100%;
+    		height: auto;
+    		transition: .5s ease;
+		}
+		div.middle {
+			transition: .5s ease;
+			opacity: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		    -ms-transform: translate(-50%, -50%)
+		}
+		div.butn:hover .background_pic{
+			opacity: 0.1
+		}
+		div.butn:hover .middle{
+			opacity: 1
+		}
+		.text{
+			color: white;
+			font-size: 24px;
+			font-family: "Avenir";
+		}
+		table{
+			margin:1em auto;
+		}
+
+	</style>
+</head>
+<body>
+	<table cellspacing="70">
+	<tr>
+		<td>
+			<a href="Dygraph.html">
+				<div class="butn">
+					<img src="vis_screen_shot_1.png" class = "background_pic" />
+					<div class = "middle">
+						<div class = "text">
+							Technology Company </br>
+							Stock Price
+						</div>						
+					</div>
+				</div>
+			</a>
+		</td>
+		<td>
+			<div class = "text">
+					Vis tool: R(dygraphs)</br>
+					Description:</br>
+					This temporal visualization gives viewer option to check stock price of some top technology companies between 2013-01-01 to 2017-10-20.
+
+			</div>						
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="gold.html">
+				<div class="butn">
+					<img src="vis_screen_shot_2.png" class = "background_pic"/>
+					<div class = "middle">
+						<div class = "text">
+							 Investment </br>
+							 Return Rate </br>
+							 on Gold
+						</div>
+					</div>
+				</div>
+			</a>
+		</td>
+		<td>
+			<div class = "text">
+					Vis tool: R(ggplot, fmsb)</br>
+					Description:</br>
+					This temporal visualization shows monthly log return on gold from 1950 to 2014. Dark color indicates low even negative return rate, and green color indicates positive rate. This visualization gives the viewer a straightforward idea of the temporal performance of gold.
+
+			</div>						
+		</td>
+	</tr>
+	</table>
+	<p></br></br></br></p>
+	<a href="https://drive.google.com/drive/folders/1wsryaH2zYQO3qEJxTpkbzmJpO-ZfrCuZ?usp=sharing">
+		<p>Code and Data for Stock Plot</p>
+	</a>
+	<p></br></p>
+	<a href="https://drive.google.com/drive/folders/1D5LKRrFMDA3j6ehUT4eq7YMxnudUa4Od?usp=sharing">
+		<p>Code and Data for Gold Plot</p>
+	</a>
+</body>
+</html>

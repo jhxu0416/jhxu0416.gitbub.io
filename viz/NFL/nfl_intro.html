@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NFL Analysis</title>
+	<style type="text/css">
+		body {
+			background: #000000;
+		}
+		img{
+			display: block;
+			margin: 0 auto;
+		}
+		div.butn{
+			position: relative;
+			width: 500px;
+			height: 400px;
+		}
+		.background_pic {
+    		opacity: 1;
+    		display: block;
+    		width: 100%;
+    		height: auto;
+    		transition: .5s ease;
+		}
+		div.middle {
+			transition: .5s ease;
+			opacity: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		    -ms-transform: translate(-50%, -50%)
+		}
+		div.butn:hover .background_pic{
+			opacity: 0.1
+		}
+		div.butn:hover .middle{
+			opacity: 1
+		}
+		.text{
+			color: white;
+			font-size: 24px;
+			font-family: "Avenir";
+		}
+		table{
+			margin:1em auto;
+		}
+
+	</style>
+</head>
+<body>
+	<table cellspacing="70">
+	<tr>
+		<td>
+			<a href="NFL_QB_Passing_Ability.html">
+				<div class="butn">
+					<img src="vis_screen_shot_1.png" class = "background_pic" />
+					<div class = "middle">
+						<div class = "text">
+							NFL Quarterback </br>
+							Passing Ability </br>
+							Ternary Plot
+						</div>						
+					</div>
+				</div>
+			</a>
+		</td>
+		<td>
+			<div class = "text">
+					Vis tool: plotly(Python)</br>
+					Description:</br>
+					Statistics of 30 quarterbacks in current 2017-2018 NFL season is used in ternary visualization. This visualization shows the relative passing ability of a quarterback in three aspects which are passing accuracy, single attempt passing distance and single-game passing distance. These three aspects show that if a quarterback is good at passing accuracy or is good at making long passes or good at using passing as offense tool relatively.
+					</br>
+					From the ternary plot, star quarterback such as Tom Brady, Russell Wilson, and Aaron Rodgers is in the middle part of the triangle, which shows their comprehensive passing skill. On the other hand, the ternary plot also shows some quarterbacks have specific preference in passing such that Jared Goff is a big fan of making long distance pass in single attempt. 
+			</div>						
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="radar.jpeg">
+				<div class="butn">
+					<img src="vis_screen_shot_2.png" class = "background_pic"/>
+					<div class = "middle">
+						<div class = "text">
+							 NFL Quarterback </br>
+							 Radar Plot
+						</div>
+					</div>
+				</div>
+			</a>
+		</td>
+		<td>
+			<div class = "text">
+					Vis tool: R(ggplot, fmsb)</br>
+					Description:</br>
+					To get a detailed comparison among quarterbacks, I make a radar plot of three top quarterbacks (Tom Brady, Alex Smith, Russell Wilson) in NFL league. From radar plot, we can see completely different playing style as a quarterback. Tom Brady, a famous game-winner, is an accurate passer with few interception, and his passes are likely to score for New England. Alex Smith is good at making long passes but lack of ability to score. Russell Wilson has outstanding anti-sack performance, which is due to his famous rushing skills as a quarterback.
+			</div>						
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="team.html">
+				<div class="butn">
+					<img src="vis_screen_shot_3.png" class = "background_pic"/>
+					<div class = "middle">
+						<div class = "text">
+							 NFL Team Statistics </br>
+							 Comparison Plot
+						</div>						
+					</div>
+				</div>
+			</a>
+		</td>
+		<td>
+			<div class = "text">
+					Vis tool: Bokeh(Python)</br>
+					Comparison plot shows the performance of every team in NFL season 2017-2018. Two offense statistics (points per game and yards per game) and one defense statistics (Combined tackles number) are in included in visualization.  
+			</div>						
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="team_hist.jpeg">
+				<div class="butn">
+					<img src="team_hist.jpeg" class = "background_pic"/>
+					<div class = "middle">
+						<div class = "text">
+							 NFL Team Statistics </br>
+							 Distribution Plot
+						</div>						
+					</div>
+				</div>
+			</a>
+		</td>
+		<td>
+			<div class = "text">
+					Vis tool: R(ggplot, ggExtra)</br>
+					Description:</br>
+					Distribution plot shows how each located in terms of yards per game and points per game. On the side of the plot, there are histograms of yards per game and points per game. Furthermore, size of points represents teams’ power ranking (higher the larger), and color represents teams’ ranking in division (higher the lighter).
+					From the plot, we may see that better usually have better higher statistics.
+					Furthermore, we found the statement that team with higher power ranking has higher rank in division is only true for teams at either very top teams or very bottom.
+			</div>						
+		</td>
+	</tr>
+	</table>
+	<p></br></br></br></br></br></br></br></br></br></p>
+	<a href="https://drive.google.com/drive/folders/1v6jT1twCSi9E5ef67EAd_9YhnQ69owNm?usp=sharing">
+		<p>Code and Data for Ternary Plot</p>
+	</a>
+	<p></br></p>
+	<a href="https://drive.google.com/drive/folders/1qXngHGa0A9Hd55zFcqQDBXquxP8XGhiM?usp=sharing">
+		<p>Code and Data for Radar Plot</p>
+	</a>
+	<p></br></p>
+	<a href="https://drive.google.com/drive/folders/1iElxV76VwS0ipf7yk04XAFHgOo3VCTOU?usp=sharing">
+		<p>Code and Data for Comparison Plot</p>
+	</a>
+	<p></br></p>
+	<a href="https://drive.google.com/drive/folders/14VPXjMGGgbld7zbSiGUDhVdvJzv3QnsK?usp=sharing">
+		<p>Code and Data for Distribution Plot</p>
+	</a>			
+</body>
+</html>

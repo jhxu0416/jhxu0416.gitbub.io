@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Royal Family of Elizabeth II</title>
+	<style type="text/css">
+		body {
+			background: #000000;
+		}
+		img{
+			display: block;
+			margin: 0 auto;
+		}
+		div.butn{
+			position: relative;
+			width: 500px;
+			height: 300px;
+		}
+		.background_pic {
+    		opacity: 1;
+    		display: block;
+    		width: 100%;
+    		height: auto;
+    		transition: .5s ease;
+		}
+		div.middle {
+			transition: .5s ease;
+			opacity: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		    -ms-transform: translate(-50%, -50%)
+		}
+		div.butn:hover .background_pic{
+			opacity: 0.1
+		}
+		div.butn:hover .middle{
+			opacity: 1
+		}
+		.text{
+			color: white;
+			font-size: 36px;
+			font-family: "Avenir";
+		}
+		table{
+			margin:1em auto;
+		}
+	</style>
+</head>
+<body>
+	<table cellspacing="70">
+	<tr>
+		<td>
+			<a href="family_tree.html">
+				<div class="butn">
+					<img src="vis_screen_shot.png" class = "background_pic"/>
+					<div class = "middle">
+						<div class = "text">
+							 Sankey Diagram of Royal Family of Elizabeth II
+						</div>						
+					</div>
+				</div>
+			</a>
+		</td>
+		<td>
+			<div class = "text">
+					Vis tool: plotly(R)</br>
+					Description:</br>
+					This Sankey diagram shows relationships of family Elizabeth II. Red represents female and blue represents male. Transparency indicates generation, which means that senior the person has a darker color. Unlike the normal family tree, levels of location are not an indication of generation. In this Sankey diagram, people on the left side are either root of family tree (Queen Elizabeth II and Prince Philip) or outsiders (people who not born in the royal family). 
+
+			</div>						
+		</td>
+	</tr>
+	</table>
+	<p></br></br></br></br></br></br></br></br></p>
+	<a href="https://drive.google.com/drive/folders/1CQjdFpS4GCIT1BCLedqD10Kv1Kjd8aT_?usp=sharing">
+		<p>Code and Data</p>
+	</a>
+</body>
+</html>

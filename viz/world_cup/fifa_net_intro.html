@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Soccer Player Network</title>
+	<style type="text/css">
+		body {
+			background: #000000;
+		}
+		img{
+			display: block;
+			margin: 0 auto;
+		}
+		div.butn{
+			position: relative;
+			width: 500px;
+			height: 500px;
+		}
+		.background_pic {
+    		opacity: 1;
+    		display: block;
+    		width: 100%;
+    		height: auto;
+    		transition: .5s ease;
+		}
+		div.middle {
+			transition: .5s ease;
+			opacity: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		    -ms-transform: translate(-50%, -50%)
+		}
+		div.butn:hover .background_pic{
+			opacity: 0.1
+		}
+		div.butn:hover .middle{
+			opacity: 1
+		}
+		.text{
+			color: white;
+			font-size: 24px;
+			font-family: "Avenir";
+		}
+		table{
+			margin:1em auto;
+		}
+
+	</style>
+</head>
+<body>
+	<table cellspacing="70">
+	<tr>
+		<td>
+			<a href="Soccer_net.jpeg">
+				<div class="butn">
+					<img src="vis_screen_shot_1.png" class = "background_pic" />
+					<div class = "middle">
+						<div class = "text">
+							1998 World Cup </br>
+							Soccer Player Network</br>
+							(non-interactive)
+						</div>						
+					</div>
+				</div>
+			</a>
+		</td>
+		<td>
+			<div class = "text">
+					Vis tool: R(igraph, network)</br>
+					Description:</br>
+					The network example describes the 22 soccer teams which participated in the World Championship in Paris, 1998. Players of the national team often have contracts in other countries. This constitutes a players’ market where national teams export players to other countries. Members of the 22 teams had contracts in altogether 35 countries.
+                    This network is highly asymmetric. Countries with large football league such as England, Germany, Italy, and Spain are usually importers that they have a lot of foreign players in the league. On the other hand, countries with small football league often are exporters, that a lot of players have foreign contracts. 
+			</div>						
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="D3_network.html">
+				<div class="butn">
+					<img src="vis_screen_shot_2.png" class = "background_pic"/>
+					<div class = "middle">
+						<div class = "text">
+							 1998 World Cup </br>
+							Soccer Player Network</br>
+							(Interactive)
+						</div>
+					</div>
+				</div>
+			</a>
+		</td>
+		<td>
+			<div class = "text">
+					Vis tool: R(networkD3)</br>
+					Description:</br>
+					Comparing to non-interactive, D3 network gives viewer ability to drag any country and to see its importation and exportation amount. In addition, size of the node represents import to export ratio of the country.
+			</div>						
+		</td>
+	</tr>
+	</table>
+	<p></br></br></br></p>
+	<a href="https://drive.google.com/drive/folders/1hAP67cILAezVN0EYzn7G__gv2i-B5Xjk?usp=sharing">
+		<p>Code and Data for Non-interactive Plot</p>
+	</a>
+	<p></br></p>
+	<a href="https://drive.google.com/drive/folders/1NI6VIPl613bU5I3pClU8NkvByAHpejLk?usp=sharing">
+		<p>Code and Data for Interactive Plot</p>
+	</a>
+</body>
+</html>
