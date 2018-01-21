@@ -7,7 +7,7 @@
 
 [Here are some fun data viz.](https://jhxu0416.github.io/jhxu0416.gitbub.io/viz/viz.html)
 
-[US terrorism data viz.](https://jhxu0416.github.io/jhxu0416.gitbub.io/viz/us_terrorism/index.html)
+[US terrorism data viz.](https://jhxu0416.github.io/jhxu0416.gitbub.io/viz/us_terrorism/US_Terrorism_Research.html)
 
 ### Contact
 
