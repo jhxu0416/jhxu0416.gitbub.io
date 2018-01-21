@@ -5,11 +5,7 @@
 
 ## Data Visualization
 
-Here are some fun data viz.
-
-```markdown
-[Visualization](https://jhxu0416.github.io/jhxu0416.gitbub.io/viz/viz.html)
-```
+[Here are some fun data viz.](https://jhxu0416.github.io/jhxu0416.gitbub.io/viz/viz.html)
 
 ### Contact
 
