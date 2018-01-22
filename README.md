@@ -3,6 +3,12 @@
 
 ## Projects
 
+[Emotion Sentiment Analysis Using Emoji](https://github.com/jhxu0416/emoji_sentiemt)
+
+[Eigenface](https://github.com/jhxu0416/eigenface)
+
+[Web Scraping](https://github.com/jhxu0416/web_scraping)
+
 ## Data Visualization
 
 [Here are some fun data viz.](https://jhxu0416.github.io/jhxu0416.gitbub.io/viz/viz.html)
