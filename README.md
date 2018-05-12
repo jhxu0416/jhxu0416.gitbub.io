@@ -3,6 +3,8 @@
 
 ## Projects
 
+[Dirichlet Process Mixture Models Clustering](https://github.com/jhxu0416/DPMM)
+
 [hacking CAPTCHA](https://github.com/jhxu0416/hacking_CAPTCHA)
 
 [Emotion Sentiment Analysis Using Emoji](https://github.com/jhxu0416/emoji_sentiemt)
